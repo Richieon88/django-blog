@@ -23,9 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-wpg4(dq*m$3o^tn6zk!t!kmozen7n!5wajbu2^=$p8_$6o#$li'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-richieon88-django-blog-rivpvmbc6v.us2.codeanyapp.com']
+ALLOWED_HOSTS = [
+    '8000-richieon88-django-blog-rivpvmbc6v.us2.codeanyapp.com', '.herokuapp.com']
 
 
 # Application definition
