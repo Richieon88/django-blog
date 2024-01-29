@@ -31,7 +31,7 @@ class Comment(models.Model):
         User, on_delete=models.CASCADE, related_name="commenter"
     )
     body = models.TextField()
-    apporved = models.BooleanField(default=False)
+    approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -39,5 +39,3 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"{self.body} by {self.author}"
-
-
